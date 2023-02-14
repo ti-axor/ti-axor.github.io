@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.cf22de13.css",
-    "main.js": "/static/js/main.9022b3b7.js",
-    "static/js/787.548ef680.chunk.js": "/static/js/787.548ef680.chunk.js",
-    "index.html": "/index.html",
-    "main.cf22de13.css.map": "/static/css/main.cf22de13.css.map",
-    "main.9022b3b7.js.map": "/static/js/main.9022b3b7.js.map",
-    "787.548ef680.chunk.js.map": "/static/js/787.548ef680.chunk.js.map"
+    "main.css": "/axor.github.io/static/css/main.cf22de13.css",
+    "main.js": "/axor.github.io/static/js/main.f89857fd.js",
+    "static/js/787.548ef680.chunk.js": "/axor.github.io/static/js/787.548ef680.chunk.js",
+    "index.html": "/axor.github.io/index.html",
+    "main.cf22de13.css.map": "/axor.github.io/static/css/main.cf22de13.css.map",
+    "main.f89857fd.js.map": "/axor.github.io/static/js/main.f89857fd.js.map",
+    "787.548ef680.chunk.js.map": "/axor.github.io/static/js/787.548ef680.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf22de13.css",
-    "static/js/main.9022b3b7.js"
+    "static/js/main.f89857fd.js"
   ]
 }
