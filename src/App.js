@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logoaxor} className="App-logo" alt="logo" />
         <p>
-          Site em construção.
+          SITE EM CONSTRUÇÃO.
         </p>
       </header>
     </div>
