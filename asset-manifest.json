@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.0fadba74.css",
-    "main.js": "/static/js/main.6e092090.js",
+    "main.js": "/static/js/main.609d0bf1.js",
     "static/media/axorlogotipo.png": "/static/media/axorlogotipo.72d758e8352739b22ef3.png",
     "index.html": "/index.html",
     "main.0fadba74.css.map": "/static/css/main.0fadba74.css.map",
-    "main.6e092090.js.map": "/static/js/main.6e092090.js.map"
+    "main.609d0bf1.js.map": "/static/js/main.609d0bf1.js.map"
   },
   "entrypoints": [
     "static/css/main.0fadba74.css",
-    "static/js/main.6e092090.js"
+    "static/js/main.609d0bf1.js"
   ]
 }
