@@ -1,17 +1,15 @@
-import './App.css';
-import logoaxor from './assets/download.jpg';
+import React from "react";
+import { MsalProvider } from "@azure/msal-react";
+import { MainContent } from "./components/MyContent";
+import SignInButton from "./components/SignInButton";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logoaxor} className="App-logo" alt="logo" />
-        <p>
-          SITE EM CONSTRUÇÃO.
-        </p>
-      </header>
-    </div>
-  );
+export default function App({msalInstance}) {
+    return (
+        <MsalProvider instance={msalInstance}>
+            <SignInButton>
+                <MainContent />
+            </SignInButton>
+        </MsalProvider>
+    );
 }
-
-export default App;
