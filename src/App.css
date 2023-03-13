@@ -37,3 +37,14 @@
     transform: rotate(360deg);
   }
 }
+
+#tooltip-top > .tooltip-inner {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #062e56;
+  max-width: 100%;
+}
+
+/* #tooltip-top > .tooltip-arrow {
+  border: 2px solid #062e56;
+} */

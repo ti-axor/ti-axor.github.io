@@ -7,9 +7,9 @@ import "./App.css";
 export default function App({msalInstance}) {
     return (
         <MsalProvider instance={msalInstance}>
-            <SignInButton>
-                <MainContent />
-            </SignInButton>
+          <SignInButton>
+            <MainContent />
+          </SignInButton>
         </MsalProvider>
     );
 }
