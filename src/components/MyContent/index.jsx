@@ -111,7 +111,7 @@ export const MainContent = () => {
             width="1820"
             height="900"
             src={`https://app.powerbi.com/reportEmbed?reportId=${REACT_APP_REP_ID}&autoAuth=true&ctid=${REACT_APP_AUTH}`}
-            frameBorder="0"
+            frameborder="0"
             allowFullScreen={true}
           ></iframe>)}
           {userToken === 'cmorielo' && (<iframe
@@ -119,7 +119,7 @@ export const MainContent = () => {
             width="1820"
             height="900"
             src={`https://app.powerbi.com/reportEmbed?reportId=b9cbafca-bbee-43b9-b58f-fdb2202e9737&autoAuth=true&ctid=${REACT_APP_AUTH}`}
-            frameBorder="0"
+            frameborder="0"
             allowFullScreen={true}
           ></iframe>)}
         </AuthenticatedTemplate>

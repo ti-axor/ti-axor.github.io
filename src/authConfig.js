@@ -26,6 +26,8 @@ export const msalConfig = {
         storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
     },
     system: {
+        asyncPopups: true,
+        allowRedirectInIframe: true,
         loggerOptions: {
             loggerCallback: (level, message, containsPii) => {
                 if (containsPii) {
@@ -33,25 +35,26 @@ export const msalConfig = {
                 }
                 switch (level) {
                     case LogLevel.Error:
-                        return console.error(message);
+                        return console.error('Error', message);
                     case LogLevel.Info:
-                        return console.info(message);
+                        return console.info('Info', message);
                     case LogLevel.Verbose:
-                        return console.debug(message);
+                        return console.debug('Verbose', message);
                     case LogLevel.Warning:
-                        return console.warn(message);
+                        return console.warn('Warning', message);
                     default:
                       return console.log('Default');
                 }
             }
-        }
+        },
+        pollIntervalMilliseconds: 10
     }
 };
 
 /**
  * Scopes you add here will be prompted for user consent during sign-in.
  * By default, MSAL.js will add OIDC scopes (openid, profile, email) to any login request.
- * For more information about OIDC scopes, visit: 
+ * For more information about OIDC scopes, visit:
  * https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes
  */
 export const loginRequest = {

@@ -28,11 +28,18 @@ function SignInButton(props) {
 
   const { name, username } = idTokenClaims;
 
+  const navbarName = () => {
+    if (name && name !== '') {
+      return `Olá, ${name}`;
+    }
+    return 'Acessar plataforma';
+  }
+
   return (
     <div>
         <Navbar bg="primary" variant="dark">
           <img src={logo} alt='logo axor' width='50px' style={{ borderRadius: '50%', paddingLeft: '10px' }} />
-          <a style={{ padding: '0 20px 0 20px' }} className="navbar-brand" href="/">Acessar plataforma</a>
+          <a style={{ padding: '0 20px 0 20px' }} className="navbar-brand" href="/">{navbarName()}</a>
           <NavigationBar />
           <OverlayTrigger placement='auto' overlay={tooltip(name, username)}>
             <Button style={{ position: 'absolute', right: '20px' }} variant="info">
