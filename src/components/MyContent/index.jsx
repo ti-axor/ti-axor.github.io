@@ -59,7 +59,6 @@ const apiPowerBi = async () => {
     }
   }
   const response = await axios.get(api, config);
-  console.log('aqui', response);
   return response;
 }
 
@@ -90,6 +89,11 @@ export const MainContent = () => {
         <AuthenticatedTemplate>
           <IdTokenContent />
           {(userToken === 'jmeyrelles' || userToken === 'gsilveira') && <div style={{ width: '100%', height: '60rem' }} dangerouslySetInnerHTML={{ __html: '<iframe title="projetosrj" width="100%" height="100%" src="https://axorcad.sharepoint.com/sites/vendas/Shared%20Documents/Forms/AllItems.aspx?e=5%3Ad20f7820c1f447478d2be5da263da35b&at=9&RootFolder=%2Fsites%2Fvendas%2FShared%20Documents%2FProjetos%20MDL%20RJ&FolderCTID=0x0120002241F0683182D84880A568FF699E88C9" frameborder="0" allowFullScreen="true"></iframe>' }} />}
+          {<iframe
+            title='google drive'
+            src="https://drive.google.com/embeddedfolderview?id=1SGF9QmJzLVe3Qp6erfg6ZKYXG2wrvuYh#list"
+            style={{ width: "100%", height: "600px", border: "0" }}
+          ></iframe>}
           {/* <iframe
             title="projetosrj"
             width="100%"

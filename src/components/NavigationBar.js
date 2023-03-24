@@ -2,13 +2,14 @@ import { AuthenticatedTemplate, UnauthenticatedTemplate, useMsal } from '@azure/
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { loginRequest } from '../authConfig';
+import getAccessToken from '../accessToken';
 
 export const NavigationBar = () => {
   const { instance } = useMsal();
 
   const handleLogin = async () => {
 		let token = '';
-      const login = instance.loginRedirect(loginRequest)
+      const login = await instance.loginRedirect(loginRequest)
           .catch((error) => console.log(error))
 			await login.then((e) => token = e.accessToken);
 			localStorage.setItem('token', JSON.stringify(token));
@@ -19,7 +20,9 @@ export const NavigationBar = () => {
     REACT_APP_ENV_PROD,
 } = process.env;
 
-const URL = process.env.NODE_ENV === 'development' ? REACT_APP_ENV_DEV : REACT_APP_ENV_PROD;
+	const URL = process.env.NODE_ENV === 'development' ? REACT_APP_ENV_DEV : REACT_APP_ENV_PROD;
+
+	getAccessToken().then((e) => localStorage.setItem('token', JSON.stringify(e)));
 
   return (
       <>
