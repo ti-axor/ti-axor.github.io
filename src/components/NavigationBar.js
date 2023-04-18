@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { AuthenticatedTemplate, UnauthenticatedTemplate, useMsal } from '@azure/msal-react';
 import React from 'react';
 import { Button } from 'react-bootstrap';
