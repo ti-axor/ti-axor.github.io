@@ -11,6 +11,7 @@ async function getAccessToken() {
             account: accounts[0]
         }
         const accessToken = await pca.acquireTokenSilent(request).then((response) => {
+            console.log(response);
             return response.accessToken;
         }).catch(error => {
             // Do not fallback to interaction when running outside the context of MsalProvider. Interaction should always be done inside context.
