@@ -82,6 +82,16 @@ export default function MainContent() {
             title="cronograma_ti"
             width="1820"
             height="1000"
+            src={`https://app.powerbi.com/reportEmbed?reportId=83d4ccb6-236b-4f6e-a2fd-6dffb11b150e&autoAuth=true&ctid=${REACT_APP_AUTH}`}
+            frameBorder="0"
+            allowFullScreen="true"
+          />
+        )}
+        {userToken === 'jmeyrelles' && (
+          <iframe
+            title="cronograma_ti"
+            width="1820"
+            height="1000"
             src={`https://app.powerbi.com/reportEmbed?reportId=668d77e3-fabc-41d4-a2ac-6bc4584994a2&autoAuth=true&ctid=${REACT_APP_AUTH}`}
             frameBorder="0"
             allowFullScreen="true"
