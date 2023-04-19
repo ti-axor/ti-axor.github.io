@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { LogLevel } from "@azure/msal-browser";
 
 const {

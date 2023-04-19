@@ -79,7 +79,7 @@ export default function MainContent() {
         <IdTokenContent />
         {userToken === 'jmeyrelles' && (
           <iframe
-            title="cronograma_ti"
+            title="Clientividade"
             width="1820"
             height="1000"
             src={`https://app.powerbi.com/reportEmbed?reportId=83d4ccb6-236b-4f6e-a2fd-6dffb11b150e&autoAuth=true&ctid=${REACT_APP_AUTH}`}
@@ -123,6 +123,16 @@ export default function MainContent() {
             width="1820"
             height="900"
             src={`https://app.powerbi.com/reportEmbed?reportId=b9cbafca-bbee-43b9-b58f-fdb2202e9737&autoAuth=true&ctid=${REACT_APP_AUTH}`}
+            frameBorder="0"
+            allowFullScreen
+          />
+        )}
+        {userToken === 'pgomes' && (
+          <iframe
+            title="Clientividade"
+            width="1820"
+            height="900"
+            src={`https://app.powerbi.com/reportEmbed?reportId=83d4ccb6-236b-4f6e-a2fd-6dffb11b150e&autoAuth=true&ctid=${REACT_APP_AUTH}`}
             frameBorder="0"
             allowFullScreen
           />
