@@ -7,20 +7,18 @@ import fundoPrincipal from '../../assets/axorlogotipo.png';
 
 function IdTokenContent() {
   const { accounts } = useMsal();
-  const [idTokenClaims, setIdTokenClaims] = useState(null);
+  // const [idTokenClaims, setIdTokenClaims] = useState(null);
 
   // function GetIdTokenClaims() {
   //     setIdTokenClaims(accounts[0].idTokenClaims)
   // }
-  useEffect(() => {
-    let user = accounts[0];
-    if (user) {
-      user = user.username.split('@')[0];
-    }
-    setIdTokenClaims(user);
-  }, [accounts]);
-
-  console.log(idTokenClaims);
+  // useEffect(() => {
+  //   let user = accounts[0];
+  //   if (user) {
+  //     user = user.username.split('@')[0];
+  //   }
+  //   setIdTokenClaims(user);
+  // }, [accounts]);
 
   return (
     <>
@@ -59,13 +57,12 @@ export default function MainContent() {
 
   useEffect(() => {
     let user = accounts[0];
+
     if (user) {
       user = user.username.split('@')[0];
     }
     setUserToken(user);
   }, [accounts]);
-
-  console.log(userToken);
 
   if (partDay === 'Bom Dia' && time.getHours() > 12 && time.getHours() < 18) {
     setPartDay('Boa Tarde');
@@ -73,10 +70,12 @@ export default function MainContent() {
   if ((partDay === 'Bom Dia' || partDay === 'Bom Tarde') && time.getHours() > 18) {
     setPartDay('Boa Noite');
   }
+
   return (
     <div className="App">
       <AuthenticatedTemplate>
         <IdTokenContent />
+        {document.getElementsByClassName("bibutton primary")}
         {userToken === 'jmeyrelles' && (
           <iframe
             title="Clientividade"
@@ -113,6 +112,16 @@ export default function MainContent() {
             width="1820"
             height="900"
             src={`https://app.powerbi.com/reportEmbed?reportId=${REACT_APP_REP_ID}&autoAuth=true&ctid=${REACT_APP_AUTH}`}
+            frameBorder="0"
+            allowFullScreen
+          />
+        )}
+        {userToken === 'cmorielo' && (
+          <iframe
+            title="Seguro MPI"
+            width="1820"
+            height="900"
+            src={`https://app.powerbi.com/reportEmbed?reportId=54c8caa6-ba73-4a0c-8ae7-1bd4ba8557a6&autoAuth=true&ctid=${REACT_APP_AUTH}`}
             frameBorder="0"
             allowFullScreen
           />
