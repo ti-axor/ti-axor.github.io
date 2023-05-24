@@ -81,7 +81,7 @@ export default function MainContent() {
             title="Clientividade"
             width="1820"
             height="1000"
-            src={`https://app.powerbi.com/reportEmbed?reportId=83d4ccb6-236b-4f6e-a2fd-6dffb11b150e&autoAuth=true&ctid=${REACT_APP_AUTH}`}
+            src={`https://app.powerbi.com/reportEmbed?reportId=83d4ccb6-236b-4f6e-a2fd-6dffb11b150e&autoAuth=true&ctid=${REACT_APP_AUTH}&filterPaneEnabled=false&navContentPaneEnabled=false`}
             frameBorder="0"
             allowFullScreen="true"
           />
@@ -101,7 +101,7 @@ export default function MainContent() {
             title="cronograma_ti"
             width="1820"
             height="800"
-            src={`https://app.powerbi.com/reportEmbed?reportId=0b860ffe-a626-4ed4-9fa9-a7f5b41995fc&autoAuth=true&ctid=${REACT_APP_AUTH}`}
+            src={`https://app.powerbi.com/reportEmbed?reportId=0b860ffe-a626-4ed4-9fa9-a7f5b41995fc&autoAuth=true&ctid=${REACT_APP_AUTH}&filterPaneEnabled=false&navContentPaneEnabled=false`}
             frameBorder="0"
             allowFullScreen="true"
           />
