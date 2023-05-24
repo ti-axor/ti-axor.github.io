@@ -141,7 +141,7 @@ export default function MainContent() {
             title="Clientividade"
             width="1820"
             height="900"
-            src={`https://app.powerbi.com/reportEmbed?reportId=83d4ccb6-236b-4f6e-a2fd-6dffb11b150e&autoAuth=true&ctid=${REACT_APP_AUTH}`}
+            src={`https://app.powerbi.com/reportEmbed?reportId=83d4ccb6-236b-4f6e-a2fd-6dffb11b150e&autoAuth=true&ctid=${REACT_APP_AUTH}&filterPaneEnabled=false&navContentPaneEnabled=false`}
             frameBorder="0"
             allowFullScreen
           />
